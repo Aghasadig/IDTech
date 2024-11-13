@@ -10,9 +10,8 @@ html, body {
 }
 
 body {
-  display: flex;
+  margin-top: 100px;
   align-items: center;
-  place-items: center;
   font-family: "Poppins", sans-serif;
   background: linear-gradient(
     95deg,
@@ -25,18 +24,21 @@ body {
   width: 65%;
   height: 70%;
   margin: auto;
-  display: flex;
   border-radius: 5px;
   box-shadow: -10px 10px 18px -6px rgba(0, 0, 0, 0.75);
+  font-size: 0;
 }
 
 .contact-title {
+  display: inline-block;
   width: 50%;
+  height: 100%;
   padding-top: 120px;
   padding-left: 30px;
   text-align: center;
   padding-right: 30px;
   background-color: #01b6d1;
+  vertical-align: top;
 }
 
 .contact-title h2 {
@@ -53,9 +55,12 @@ body {
 }
 
 .contact-info {
+  height: 100%;
   width: 50%;
   padding: 5px 50px;
   background-color: white;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .contact-info h2 {
@@ -72,6 +77,8 @@ body {
 
 .contact-form {
   width: 100%;
+  font-size: 0;
+  vertical-align: top;
 }
 
 .contact-form input,
@@ -86,6 +93,7 @@ body {
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 
 .contact-form button {
