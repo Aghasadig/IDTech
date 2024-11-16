@@ -25,7 +25,7 @@
   margin: 0 auto;
 }
 
-.free-plan {
+.user-packages-card-plans {
   width: 400px;
   height: 600px;
   border-radius: 10px;
@@ -33,106 +33,48 @@
   display: inline-block;
 }
 
-.free-plan p {
+.user-packages-card-plans p {
   font-size: 30px;
 }
 
-.free-plan h2 {
+.user-packages-card-plans h2 {
   font-size: 55px;
   font-weight: 700;
 }
 
-.free-plan header {
+.user-packages-card-plans header {
   margin-block: 30px;
 }
 
-.free-plan li {
+.user-packages-card-plans li {
   list-style: none;
   font-size: 20px;
   margin-block: 20px;
 }
 
-.free-plan button {
+.user-packages-card-plans button {
   width: 150px;
   height: 50px;
   text-align: center;
-  background-color: pink;
   border-radius: 30px;
   font-size: 20px;
   margin-top: 50px;
   border-style: none;
-}
-
-.pro-plan {
-  width: 400px;
-  height: 600px;
-  display: inline-block;
-  box-shadow: 7px 4px 52px -4px rgba(0, 0, 0, 0.75);
-  border-radius: 10px;
-}
-
-.pro-plan header{
-    margin-block: 30px;
-}
-
-.pro-plan p {
-  font-size: 35px;
-}
-
-.pro-plan h2 {
-  font-size: 50px;
   font-weight: 700;
 }
 
-.pro-plan li {
-  list-style: none;
-  font-size: 20px;
-  margin-block: 20px;
-}
-.pro-plan button {
-  width: 150px;
-  height: 50px;
-  text-align: center;
-  background-color: rgb(88, 185, 22);
-  border-radius: 30px;
-  font-size: 20px;
-  margin-top: 50px;
-  border-style: none;
+.bgdifferent {
+  box-shadow: 0px 0px 41px -6px rgba(0, 0, 0, 0.75);
 }
 
-.enterprise-plan {
-  width: 400px;
-  height: 600px;
-  display: inline-block;
+.basic-plan-button {
+  background-color: #c70670;
 }
 
-.enterprise-plan header{
-    margin-block: 30px;
+.pro-plan-button {
+  background-color: #2fc28c;
 }
 
-.enterprise-plan p{
-  font-size: 35px;
-}
-
-.enterprise-plan h2 {
-  font-size: 50px;
-  font-weight: 700;
-}
-
-.enterprise-plan li {
-  list-style: none;
-  font-size: 20px;
-  margin-block: 20px;
-}
-
-.enterprise-plan button {
-  width: 150px;
-  height: 50px;
-  text-align: center;
-  background-color: rgb(248, 192, 255);
-  border-radius: 30px;
-  font-size: 20px;
-  margin-top: 50px;
-  border-style: none;
-  font-weight: 500;
+.enterprise-plan-button {
+  background-color: #6821db;
 }
