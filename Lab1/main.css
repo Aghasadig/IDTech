@@ -1,160 +1,138 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html, body{
-    width: 100%;
-    height: 100%;
-    background-color: whitesmoke;
+.mainbox {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
 }
 
-.mainbox{
-    width: 100%;
-    height: 100%;
-    text-align: center;
+.tablename {
+  color: black;
+  margin-block: 80px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
 }
 
-.boxes{
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    margin-top: 80px;
+.user-packages-cards {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.tablename{
- 
-    color: black;
-    margin-top: 30px;
-    font-size: 40px;
-    text-align: center;
-    font-weight: 800;
+.free-plan {
+  width: 400px;
+  height: 600px;
+  border-radius: 10px;
+  margin-left: 10px;
+  display: inline-block;
 }
 
-.packages-card{
-    width: 400px;
-    height: 600px;
-    /* background-color: aqua; */
-    border-radius: 10px;
-    margin-left: 10px;
-    display: inline-block;
-
+.free-plan p {
+  font-size: 30px;
 }
 
-.free{
-    display: inline-block;
-    
+.free-plan h2 {
+  font-size: 55px;
+  font-weight: 700;
 }
 
-
-.basic{
-    font-size: 35px;
+.free-plan header {
+  margin-block: 30px;
 }
 
-.free{
-    font-size: 50px;
-    font-weight: 700;
-    margin-top: 20px;
+.free-plan li {
+  list-style: none;
+  font-size: 20px;
+  margin-block: 20px;
 }
 
-.free li{
-    list-style: none;
-    font-size: 20px;
-    margin-top: 20px;
-
+.free-plan button {
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  background-color: pink;
+  border-radius: 30px;
+  font-size: 20px;
+  margin-top: 50px;
+  border-style: none;
 }
 
-.free button{
-    width: 150px;
-    height: 50px;
-    text-align: center;
-    background-color: pink;
-    border-radius: 30px;
-    font-size: 20px;
-    margin-top: 50px;
-    border-style: none; 
+.pro-plan {
+  width: 400px;
+  height: 600px;
+  display: inline-block;
+  box-shadow: 7px 4px 52px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
 }
 
-.pro{
-    display: inline-block;
-    box-shadow: 7px 4px 52px -4px rgba(0,0,0,0.75);
+.pro-plan header{
+    margin-block: 30px;
 }
 
-.pro i{
-    font-size: 50px;   
-    text-align: center; 
+.pro-plan p {
+  font-size: 35px;
 }
 
-.basic{
-    font-size: 35px;
+.pro-plan h2 {
+  font-size: 50px;
+  font-weight: 700;
 }
 
-.free{
-    font-size: 50px;
-    font-weight: 700;
-    margin-top: 20px;
+.pro-plan li {
+  list-style: none;
+  font-size: 20px;
+  margin-block: 20px;
+}
+.pro-plan button {
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  background-color: rgb(88, 185, 22);
+  border-radius: 30px;
+  font-size: 20px;
+  margin-top: 50px;
+  border-style: none;
 }
 
-.pro li{
-    list-style: none;
-    font-size: 20px;
-    margin-top: 20px;
-
-}
-.pro button{
-    width: 150px;
-    height: 50px;
-    text-align: center;
-    background-color: rgb(88, 185, 22);
-    border-radius: 30px;
-    font-size: 20px;
-    margin-top: 50px;
-    border-style: none;
+.enterprise-plan {
+  width: 400px;
+  height: 600px;
+  display: inline-block;
 }
 
-
-.enterprise{
-    display: inline-block;
+.enterprise-plan header{
+    margin-block: 30px;
 }
 
-.enterprise i{
-    font-size: 50px;   
-    text-align: center; 
+.enterprise-plan p{
+  font-size: 35px;
 }
 
-.basic{
-    font-size: 35px;
+.enterprise-plan h2 {
+  font-size: 50px;
+  font-weight: 700;
 }
 
-.free{
-    font-size: 50px;
-    font-weight: 700;
-    margin-top: 20px;
+.enterprise-plan li {
+  list-style: none;
+  font-size: 20px;
+  margin-block: 20px;
 }
 
-.enterprise li{
-    list-style: none;
-    font-size: 20px;
-    margin-top: 20px;
-
+.enterprise-plan button {
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  background-color: rgb(248, 192, 255);
+  border-radius: 30px;
+  font-size: 20px;
+  margin-top: 50px;
+  border-style: none;
+  font-weight: 500;
 }
-
-.enterprise button{
-    width: 150px;
-    height: 50px;
-    text-align: center;
-    background-color: rgb(248, 192, 255);
-    border-radius: 30px;
-    font-size: 20px;
-    margin-top: 50px;
-    border-style: none;
-    
-}
-
-
-
-
-
-
-
