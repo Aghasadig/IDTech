@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+html,body{
+    width: 100%;
+}
+
+.container{
+    margin: 50px 10%;
+}
+
+.header-items{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.menu-items ul{
+    display: flex;
+    gap: 25px;
+}
+
+.menu-items li a{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.menu-items li a:hover{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px 15px;
+    transition: 0.1;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.advertising-box{
+    border: 1px solid black;
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advertising-box-info{
+    border: 1px solid red;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 40px;
+}
+
+.advertising-box-info:first-child{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.advertising-box-info :nth-child(2){
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+    html,body{
+        font-size: 8px;
+    }
+    .container{
+        margin: 20px 3%;
+    }
+
+
+    .logo{
+        gap: 5px;
+    }
+
+    .logo h2{
+    font-size: 3.5rem;
+    font-weight: 600;
+    }
+
+    .menu-items{
+        display: none;
+    }
+
+    .menu-icon{
+        display: initial;
+    }
+
+    .menu-icon span{
+        font-size: 5rem;
+    }
+}
