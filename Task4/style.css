@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  margin: 30px 5%;
+}
+
+.header-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-items {
+  display: flex;
+  gap: 50px;
+}
+
+.menu-item {
+  list-style: none;
+  margin-inline: 20px;
+}
+
+.menu-item a {
+  color: #252b42;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.menu-item a:hover {
+  color: #fa4a0c;
+  transition: 0.1ms;
+}
+
+.menu-icon {
+  display: none;
+  color: #737373;
+  opacity: 60%;
+}
+
+/* Responsive header start */
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+  .container {
+    margin: 10px 2%;
+  }
+  .logo img {
+    width: 104px;
+    height: 52px;
+  }
+  .menu-items {
+    display: none;
+  }
+  .menu-icon {
+    display: initial;
+  }
+}
+/* Responsive header end */
+
+
+
+
+.app-download-section{
+    width: 100%;
+    height: 600px;
+    background-image: url(/images/Rectangle\ 48.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.app-download-section :nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.app-download-section h3{
+font-size: 1.5rem;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 1px;
+text-align: center;
+color: #F6F6F6;
+}
+
+.app-download-section h2{
+font-size: 3.5rem;
+font-weight: 700;
+line-height: 80px;
+letter-spacing: 1px;
+text-align: center;
+color: white;
+margin-block: 15px;
+}
+
+
+.app-download-section h4{
+font-size: 1.5rem;
+font-weight: 500;
+line-height: 38px;
+letter-spacing: 1px;
+text-align: center;
+color: #F6F6F6;
+}
+
+.buttons{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+.btn-download{
+    background-color: #FA4A0C;
+    width: 230px;
+    height: 60px;
+    border-radius: 30px;
+    border-style: none;
+}
+
+.btn-download a{
+    color: white;
+    text-decoration: none;
+font-size: 1.5rem;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 1px;
+}
+
+.btn-backdiff{
+    background-color:transparent;
+    border: 1px solid white;
+}
+
+.app-img{
+    position: absolute;
+    margin: 0 auto;
+    bottom: -73%;
+}
+
+.app-img img{
+    width: 530px;
+    height: 650px;
+}
+
+/* Responsive app-download-section start */
+
+@media screen and (max-width:768px){
+  html,
+  body {
+    font-size: 10px;
+  }
+  .container {
+    margin: 10px 2%;
+  }
+  .app-download-section{
+    background-image: none;
+  }
+
+  .app-download-section h3{
+    color: black;
+  }
+  .app-download-section h2{
+    color: black;
+    margin-block: 1px;
+    line-height: 50px;
+
+  }
+  .app-download-section h4{
+    color: black;
+  }
+  .buttons{
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-backdiff{
+    background-color: white;
+    border: 1px solid #FA4A0C;
+  }
+
+  .btn-backdiff a{
+    color: #FA4A0C;
+  }
+
+  .app-img{
+    bottom: -58%;
+  }
+
+  .app-img img{
+    width: 400px;
+    height: 500px;
+  }
+
+
+    
+}
+
+/* Responsive app-download-section end */
