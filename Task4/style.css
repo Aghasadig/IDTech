@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  margin: 30px 5%;
+  margin: 30px 7%;
 }
 
 .header-items {
@@ -73,96 +73,92 @@ body {
 }
 /* Responsive header end */
 
-
-
-
-.app-download-section{
-    width: 100%;
-    height: 600px;
-    background-image: url(/images/Rectangle\ 48.png);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.app-download-section {
+  width: 100%;
+  height: 700px;
+  background-image: url(/images/Rectangle\ 48.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.app-download-section :nth-child(1){
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.app-download-section :nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.app-download-section h3{
-font-size: 1.5rem;
-font-weight: 700;
-line-height: 36px;
-letter-spacing: 1px;
-text-align: center;
-color: #F6F6F6;
-}
-
-.app-download-section h2{
-font-size: 3.5rem;
-font-weight: 700;
-line-height: 80px;
-letter-spacing: 1px;
-text-align: center;
-color: white;
-margin-block: 15px;
+.app-download-section h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #f6f6f6;
 }
 
-
-.app-download-section h4{
-font-size: 1.5rem;
-font-weight: 500;
-line-height: 38px;
-letter-spacing: 1px;
-text-align: center;
-color: #F6F6F6;
+.app-download-section h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  margin-block: 15px;
 }
 
-.buttons{
-    display: flex;
-    gap: 30px;
-    margin-top: 30px;
-}
-.btn-download{
-    background-color: #FA4A0C;
-    width: 230px;
-    height: 60px;
-    border-radius: 30px;
-    border-style: none;
+.app-download-section h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #f6f6f6;
 }
 
-.btn-download a{
-    color: white;
-    text-decoration: none;
-font-size: 1.5rem;
-font-weight: 700;
-line-height: 36px;
-letter-spacing: 1px;
+.buttons {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+.btn-download {
+  background-color: #fa4a0c;
+  width: 230px;
+  height: 60px;
+  border-radius: 30px;
+  border-style: none;
 }
 
-.btn-backdiff{
-    background-color:transparent;
-    border: 1px solid white;
+.btn-download a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1px;
 }
 
-.app-img{
-    position: absolute;
-    margin: 0 auto;
-    bottom: -73%;
+.btn-backdiff {
+  background-color: transparent;
+  border: 1px solid white;
 }
 
-.app-img img{
-    width: 530px;
-    height: 650px;
+.app-img {
+  position: absolute;
+  margin: 0 auto;
+  bottom: -70%;
+}
+
+.app-img img {
+  width: 600px;
+  height: 750px;
 }
 
 /* Responsive app-download-section start */
 
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px) {
   html,
   body {
     font-size: 10px;
@@ -170,46 +166,319 @@ letter-spacing: 1px;
   .container {
     margin: 10px 2%;
   }
-  .app-download-section{
+  .app-download-section {
     background-image: none;
   }
 
-  .app-download-section h3{
+  .app-download-section h3 {
     color: black;
   }
-  .app-download-section h2{
+  .app-download-section h2 {
     color: black;
     margin-block: 1px;
     line-height: 50px;
-
   }
-  .app-download-section h4{
+  .app-download-section h4 {
     color: black;
   }
-  .buttons{
+  .buttons {
     display: flex;
     flex-direction: column;
   }
-  .btn-backdiff{
+  .btn-backdiff {
     background-color: white;
-    border: 1px solid #FA4A0C;
+    border: 1px solid #fa4a0c;
   }
 
-  .btn-backdiff a{
-    color: #FA4A0C;
+  .btn-backdiff a {
+    color: #fa4a0c;
   }
 
-  .app-img{
-    bottom: -58%;
+  .app-img {
+    bottom: -45%;
   }
 
-  .app-img img{
+  .app-img img {
     width: 400px;
     height: 500px;
   }
-
-
-    
 }
 
 /* Responsive app-download-section end */
+
+.app-explanation-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app-explanation-section-top-line {
+  margin-top: 30%;
+}
+
+.app-explanation-section-header {
+  font-size: 2.3rem;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+
+.app-explanation-section-create-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-explanation-section-banner {
+  width: 40%;
+}
+
+.app-explanation-section-banner img {
+  width: 650px;
+  height: 830px;
+}
+.app-explanation-section-info {
+  width: 40%;
+}
+.app-explanation-section-info h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1px;
+  color: #fa4a0c;
+}
+
+.app-explanation-section-info h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 1px;
+  color: #252b42;
+  margin-block: 30px;
+}
+
+.app-explanation-section-info h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 1px;
+  color: #737373;
+}
+
+/* Responsive app-explanation-section start */
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+  .container {
+    margin: 10px 2%;
+  }
+
+  .app-explanation-section-create-account {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .app-explanation-section-top-line {
+    display: none;
+  }
+
+  .app-explanation-section-header {
+    margin-top: 60%;
+  }
+
+  .app-explanation-section-banner img {
+    width: 400px;
+    height: 550px;
+    margin-left: -70px;
+  }
+
+  .app-explanation-section-info h2 {
+    margin-block: 15px;
+  }
+
+  .create-account-diff-pos {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .explore-shopping-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .checkout-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+/* Responsive app-explanation-section end */
+
+.app-download-buttons {
+  width: 100%;
+  height: 550px;
+  background-image: url(/images/Rectangle\ 47.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-download-buttons div h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+}
+
+.app-download-buttons div h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  margin-block: 15px;
+}
+
+.download-buttons {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  justify-content: center;
+}
+.btn-store {
+  background-color: #fa4a0c;
+  width: 230px;
+  height: 60px;
+  border-radius: 10px;
+  border-style: none;
+  margin-top: 40px;
+}
+
+.btn-store a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1px;
+}
+
+.appstore-btn-backdiff {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.download-buttons button:nth-child(3) {
+  display: none;
+}
+
+.download-buttons button:nth-child(4) {
+  display: none;
+}
+
+/* Responsive app-download-buttons start */
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+  .container {
+    margin: 10px 2%;
+  }
+
+  .app-download-buttons {
+    background-image: none;
+    background-color: #252b42;
+  }
+  .download-buttons button:nth-child(1) {
+    display: none;
+  }
+
+  .download-buttons button:nth-child(2) {
+    display: none;
+  }
+
+  .download-buttons button:nth-child(3) {
+    display: initial;
+  }
+
+  .download-buttons button:nth-child(4) {
+    display: initial;
+  }
+}
+
+/* Responsive app-download-buttons end */
+
+.page-footer{
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons :nth-child(2){
+  margin-inline: 25px;
+}
+
+.subtitle{
+font-size: 0.8rem;
+font-weight: 700;
+line-height: 18px;
+letter-spacing: 1px;
+color: #5C5C5C;
+}
+
+.page-footer p{
+font-size: 0.8rem;
+font-weight: 700;
+line-height: 18px;
+letter-spacing: 1px;
+color: #5C5C5C;
+display: none;
+}
+/* Responsive footer start */
+
+@media screen and (max-width:768px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+  .container {
+    margin: 10px 2%;
+  }
+
+  .page-footer{
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-logo{
+    display: none;
+  }
+
+  .subtitle{
+    display: none;
+  }
+
+  .page-footer p{
+    display: initial;
+  }
+  
+}
+
+
+
+
+
+
+
+
+/* Responsive footer start */
