@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  width: 100%;
+  font-family: "Montserrat", serif;
+}
+
+.page-wrapper {
+  background-color: #302c42;
+  padding: 50px 10%;
+}
+
+.header-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-items-logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-items-logo h2 {
+  font-family: "Tulpen One", sans-serif;
+  font-size: 4rem;
+  background: linear-gradient(to right, #c0b7e8, #8176af);
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.header-items-menu {
+  display: flex;
+  gap: 50px;
+}
+
+.header-items-menu-item a {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 14.63px;
+}
+
+.header-items-buttons {
+  display: flex;
+  gap: 50px;
+  width: 25%;
+}
+
+.header-button {
+  border-radius: 40px;
+  width: 150px;
+  height: 50px;
+}
+
+.contact-us-btn {
+  border: 2px solid white;
+  background-color: transparent;
+}
+
+.join-hydra {
+  border-style: none;
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+}
+
+.header-button a {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 14.63px;
+}
+
+.join-hydra a {
+  color: #343045;
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+/* Header responsive design start */
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  .page-wrapper {
+    padding: 15px 2%;
+  }
+
+  .header-items-menu {
+    display: none;
+  }
+
+  .header-items-buttons {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: initial;
+  }
+}
+
+/* Header responsive design start */
+
+.advertising-section {
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.advertising-section-vector-four {
+  position: absolute;
+  left: -13%;
+}
+
+.advertising-section-info {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.advertising-section-info-main-text {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 56.07px;
+  color: white;
+}
+
+.advertising-section-info-main-text span {
+  background: linear-gradient(to right, #c0b7e8 -1.02%, #8176af 36.25%);
+  color: transparent;
+  background-clip: text;
+}
+
+.advertising-section-info p {
+  color: white;
+  font-weight: 400;
+  line-height: 19.5px;
+  line-height: 30px;
+}
+
+.advertising-section-info-button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.advertising-section-info-button {
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+  border-radius: 45px;
+  width: 200px;
+  height: 45px;
+  border-style: none;
+}
+.advertising-section-info-button a {
+  font-size: 0.7rem;
+  font-weight: 800;
+  line-height: 14.63px;
+  color: #343045;
+}
+
+.advertising-section-banner {
+  position: relative;
+  width: 45%;
+}
+
+.advertising-section-banner-img-wrapper {
+  width: 540px;
+  height: 470px;
+  border: 20px solid #00000021;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 105px;
+  border-bottom-left-radius: 245px;
+  z-index: 3;
+}
+
+.advertising-section-banner-img-wrapper img {
+  border-top-left-radius: 85px;
+  border-top-right-radius: 83px;
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 230px;
+  background-size: cover;
+  position: absolute;
+  z-index: 5;
+}
+
+.advertising-section-vector-one {
+  position: absolute;
+  bottom: -25%;
+  left: 30%;
+  transform: rotate(10deg);
+  z-index: 4;
+}
+
+.advertising-section-vector-two {
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  transform: rotate(10deg);
+  z-index: 4;
+}
+
+.advertising-section-vector-three {
+  position: absolute;
+  top: -50%;
+  left: -5%;
+  transform: rotate(10deg);
+  z-index: 4;
+}
+
+.advertising-section-vector-three {
+  position: absolute;
+  left: 10%;
+}
+
+/* advertising-section responsive design start */
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  .page-wrapper {
+    padding: 15px 2%;
+  }
+}
+
+/* advertising-section responsive design end */
+
+.contact-us-section {
+  margin-top: 10%;
+  width: 100%;
+  padding: 50px;
+  box-shadow: 0px 4px 4px 0px #c0b7e803;
+  background: radial-gradient(
+      50% 2900.76% at 50% 53.89%,
+      rgba(58, 52, 86, 0.95) 0%,
+      #211e2e 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-us {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 30%;
+  border-style: none;
+  border-right: 1px solid #c0b7e854;
+}
+
+.contact-us-info h2 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+.contact-us-info p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 30px;
+  color: white;
+}
+
+.diff-border {
+  border-style: none;
+}
+
+/* contact-us-section responsive design start */
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  .page-wrapper {
+    padding: 15px 2%;
+  }
+
+  .contact-us-section {
+    flex-direction: column;
+    background: transparent;
+    gap: 50px;
+  }
+
+  .contact-us {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid #c0b7e854;
+    border-radius: 50px;
+    padding: 20px;
+    background: radial-gradient(
+      50% 2900.76% at 50% 53.89%,
+      rgba(58, 52, 86, 0.95) 0%,
+      #211e2e 100%
+    );
+  }
+}
+
+/* contact-us-section responsive design end */
+
+.introduction-section {
+  width: 100%;
+  margin-top: 10%;
+}
+
+.introduction-section-header {
+  display: flex;
+}
+
+.introduction-section-header-main-text {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 43.88px;
+  color: white;
+}
+
+.introduction-section-header-main-text span {
+  font-weight: 300;
+}
+
+.introduction-section-header-right-arrow {
+  margin-top: 17px;
+}
+
+.introduction-section-header-secondary-text {
+  color: white;
+  font-weight: 400;
+  line-height: 25px;
+  margin-left: 20%;
+}
