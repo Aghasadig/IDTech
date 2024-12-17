@@ -172,8 +172,8 @@ body {
 .advertising-section-info-button {
   background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
   border-radius: 45px;
-  width: 200px;
-  height: 45px;
+  width: 250px;
+  height: 55px;
   border-style: none;
 }
 .advertising-section-info-button a {
@@ -248,6 +248,61 @@ body {
 
   .page-wrapper {
     padding: 15px 2%;
+  }
+
+  .advertising-section-vector-four {
+    display: none;
+  }
+
+  .advertising-section-vector-three {
+    display: none;
+  }
+
+  .advertising-section-vector-two {
+    display: none;
+  }
+
+  .advertising-section-vector-one {
+    display: none;
+  }
+  .advertising-section {
+    flex-direction: column-reverse;
+  }
+
+  .advertising-section-banner-img-wrapper img {
+    width: 420px;
+    height: 400px;
+  }
+
+  .advertising-section-banner-img-wrapper {
+    width: 460px;
+    height: 440px;
+  }
+
+  .advertising-section-info-button-wrapper div {
+    display: none;
+  }
+
+  .advertising-section-info {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .advertising-section-info p {
+    display: none;
+  }
+
+  .advertising-section-info-main-text {
+    text-align: center;
+    margin-block: 30px;
+  }
+
+  .advertising-section-info-button-wrapper {
+    justify-content: center;
+    width: 100%;
+  }
+  .advertising-section-info-button {
+    width: 70%;
   }
 }
 
@@ -331,7 +386,7 @@ body {
 
 /* contact-us-section responsive design end */
 
-.introduction-section {
+.introduction-section-wrapper {
   width: 100%;
   margin-top: 10%;
 }
@@ -360,4 +415,375 @@ body {
   font-weight: 400;
   line-height: 25px;
   margin-left: 20%;
+  margin-bottom: 35px;
 }
+
+.introduction-section {
+  position: relative;
+  display: flex;
+  margin-top: 5%;
+  align-items: center;
+  justify-content: space-between;
+}
+.introduction-section-vectors {
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  left: 10%;
+}
+
+.introduction-section-banner {
+  width: 40%;
+  z-index: 2;
+}
+
+.introduction-section-info {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  z-index: 2;
+}
+
+.introduction-section-info h2 {
+  color: white;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.introduction-section-info span {
+  font-weight: 300;
+}
+
+.introduction-section-info p {
+  font-size: 1rem;
+  color: white;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.introduction-section-info button {
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+  width: 250px;
+  height: 50px;
+  border-radius: 40px;
+  border-style: none;
+}
+
+.introduction-section-info button a {
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 14.63px;
+  color: #343045;
+}
+
+/* introduction-section-wrapper responsive design start */
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  .page-wrapper {
+    padding: 15px 2%;
+  }
+
+  .introduction-section-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .introduction-section-header-right-arrow {
+    display: none;
+  }
+
+  .introduction-section-header-main-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .introduction-section-header-secondary-text {
+    display: none;
+  }
+
+  .introduction-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .introduction-section-banner {
+    width: 90%;
+  }
+
+  .introduction-section-banner img {
+    width: 400px;
+    height: 400px;
+  }
+  .introduction-section-info {
+    align-items: center;
+    width: 90%;
+  }
+
+  .introduction-section-vectors {
+    display: none;
+  }
+
+  .introduction-section-info h2 {
+    display: none;
+  }
+
+  .introduction-section-info p {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .introduction-section-info button {
+    width: 70%;
+    margin-top: 30px;
+  }
+}
+
+/* introduction-section-wrapper responsive design end */
+
+.hydra-benefits-section-wrapper {
+  width: 100%;
+  margin-top: 10%;
+}
+
+.hydra-benefits-section-header {
+  display: flex;
+  gap: 20px;
+}
+
+.hydra-benefits-section-header-main-text {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 50px;
+  color: white;
+}
+
+.hydra-benefits-section-header-main-text span {
+  font-weight: 300;
+}
+
+.hydra-benefits-section-header-right-arrow {
+  margin-top: 30px;
+}
+
+.hydra-benefits-section-header-secondary-text {
+  color: white;
+  font-weight: 400;
+  line-height: 25px;
+  margin-left: 20%;
+}
+
+.hydra-benefits-section-cards {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.hydra-benefits-section-cards-vector {
+  position: absolute;
+  z-index: 1;
+  right: 1%;
+}
+
+.hydra-benfits-section-card-item {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
+  border-radius: 40px;
+  padding: 35px 30px;
+}
+
+.hydra-benfits-section-card-item-img-wrapper {
+  width: 220px;
+  height: 220px;
+  border: 15px solid #0e0e0e52;
+  border-radius: 50%;
+}
+
+.hydra-benfits-section-card-item-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hydra-benfits-section-card-item h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 30px;
+  color: white;
+}
+
+.hydra-benfits-section-card-item-line {
+  width: 65%;
+  height: 1px;
+  background-color: #c0b7e854;
+}
+
+.hydra-benfits-section-card-item p {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+.hydra-benfits-section-card-item-button {
+  margin-top: 10px;
+  width: 70%;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+  padding: 20px 0;
+  border-style: none;
+}
+
+.hydra-benfits-section-card-item-button a {
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 16px;
+  color: #343045;
+}
+
+/* hydra-benefits-section-wrapper responsive design start */
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  .page-wrapper {
+    padding: 15px 2%;
+  }
+
+  .hydra-benefits-section-header-main-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .hydra-benefits-section-header-right-arrow {
+    display: none;
+  }
+  .hydra-benefits-section-header-secondary-text {
+    display: none;
+  }
+
+  .hydra-benefits-section-cards-vector {
+    display: none;
+  }
+
+  .hydra-benefits-section-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .hydra-benfits-section-card-item {
+    width: 80%;
+  }
+}
+
+/* hydra-benefits-section-wrapper responsive design end */
+
+.hardware-and-tech-section-wrapper {
+  margin-top: 10%;
+  width: 100%;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-image: url(/images/pexels-rodnae-productions-8097332\ 1.png);
+  background-size: cover;
+  z-index: 2;
+  position: relative;
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hardware-and-tech-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 55px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.hardware-and-tech-header span {
+  font-weight: 300;
+}
+
+.hardware-and-tech-icon-wrapper {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+  position: absolute;
+  left: 50%;
+  bottom: -25%;
+  transform: translate(-50%, -50%);
+}
+
+.hardware-and-tech-icon-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* hardware-and-tech-section-wrapper responsive design start */
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  .page-wrapper {
+    padding: 15px 2%;
+  }
+
+  .hardware-and-tech-icon-wrapper {
+    display: none;
+  }
+
+  .hardware-and-tech-section-wrapper {
+    margin-top: 60px;
+    height: 200px;
+  }
+}
+
+/* hardware-and-tech-section-wrapper responsive design end */
+.company-logos-section-wrapper {
+  margin-top: 5%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+/* company-logos-section-wrapper responsive design start */
+
+@media screen and (max-width: 768px) {
+  .page-wrapper {
+    padding: 15px 2%;
+  }
+
+  .company-logos-section-wrapper {
+    margin-top: 60px;
+    flex-direction: column;
+  }
+}
+
+/* company-logos-section-wrapper responsive design end */
