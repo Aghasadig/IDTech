@@ -21,6 +21,7 @@ body {
 .page-wrapper {
   background-color: #302c42;
   padding: 50px 10%;
+  width: 100%;
 }
 
 .header-items {
@@ -121,7 +122,7 @@ body {
   }
 }
 
-/* Header responsive design start */
+/* Header responsive design end */
 
 .advertising-section {
   width: 100%;
@@ -271,14 +272,21 @@ body {
     flex-direction: column-reverse;
   }
 
+  .advertising-section-banner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .advertising-section-banner-img-wrapper img {
-    width: 420px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
 
   .advertising-section-banner-img-wrapper {
-    width: 460px;
-    height: 440px;
+    margin: 0 auto;
+    width: 340px;
+    height: 340px;
   }
 
   .advertising-section-info-button-wrapper div {
@@ -319,9 +327,7 @@ body {
   background: radial-gradient(
       50% 2900.76% at 50% 53.89%,
       rgba(58, 52, 86, 0.95) 0%,
-      #211e2e 100%
-    )
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+      #211e2e 100%);
   border-radius: 90px;
   display: flex;
   justify-content: space-between;
@@ -354,36 +360,58 @@ body {
   border-style: none;
 }
 
+.contact-us-left-click-icon{
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+.contact-us-right-click-icon{
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
 /* contact-us-section responsive design start */
 
 @media screen and (max-width: 768px) {
   html,
   body {
-    font-size: 12px;
+    font-size: 8px;
   }
 
   .page-wrapper {
     padding: 15px 2%;
   }
 
-  .contact-us-section {
-    flex-direction: column;
-    background: transparent;
-    gap: 50px;
+  .contact-us-responsive-none{
+    display: none;
   }
 
+  .contact-us-section {
+    background: transparent;
+    padding: 10px;
+  }
   .contact-us {
     align-items: center;
     justify-content: center;
     width: 100%;
     border: 1px solid #c0b7e854;
     border-radius: 50px;
-    padding: 20px;
+    padding: 0;
     background: radial-gradient(
       50% 2900.76% at 50% 53.89%,
       rgba(58, 52, 86, 0.95) 0%,
       #211e2e 100%
     );
+  }
+
+  .contact-us-left-click-icon{
+    display: initial;
+  }
+
+  .contact-us-right-click-icon{
+    display: initial;
   }
 }
 
@@ -520,12 +548,14 @@ body {
   }
 
   .introduction-section-banner {
-    width: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .introduction-section-banner img {
-    width: 400px;
-    height: 400px;
+    width: 320px;
+    height: 320px;
   }
 
   .introduction-section-info {
@@ -610,6 +640,7 @@ body {
   background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
   border-radius: 40px;
   padding: 35px 30px;
+  position: relative;
 }
 
 .hydra-benfits-section-card-item-img-wrapper {
@@ -662,6 +693,38 @@ body {
   color: #343045;
 }
 
+.hydra-benefits-left-click{
+  position: absolute;
+  left: -7%;
+  top: 45%;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+
+.hydra-benefits-left-click img{
+  width: 100%;
+  height: 100%;
+}
+
+.hydra-benefits-right-click{
+  position: absolute;
+  right: -6%;
+  top: 45%;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+
+.hydra-benefits-right-click img{
+  width: 100%;
+  height: 100%;
+}
+
 /* hydra-benefits-section-wrapper responsive design start */
 @media screen and (max-width: 768px) {
   html,
@@ -701,6 +764,17 @@ body {
   .hydra-benfits-section-card-item {
     width: 80%;
   }
+
+  .hydra-benfits-responsive-none{
+    display: none;
+  }
+
+  .hydra-benefits-left-click{
+    display: initial;
+  }
+  .hydra-benefits-right-click{
+    display: initial;
+  }
 }
 
 /* hydra-benefits-section-wrapper responsive design end */
@@ -721,7 +795,7 @@ body {
 }
 
 .hardware-and-tech-header h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 55px;
   color: white;
@@ -754,7 +828,7 @@ body {
 @media screen and (max-width: 768px) {
   html,
   body {
-    font-size: 12px;
+    font-size: 8px;
   }
 
   .page-wrapper {
@@ -765,9 +839,16 @@ body {
     display: none;
   }
 
+  .hardware-and-tech-header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  
+
   .hardware-and-tech-section-wrapper {
     margin-top: 60px;
-    height: 200px;
+    height: 150px;
   }
   .hardware-and-tech-header h2 {
     margin-top: 20px;
@@ -783,6 +864,35 @@ body {
   display: flex;
 }
 
+.company-logos-left-click{
+  border-radius: 50%;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  width: 40px;
+  height: 40px;
+  display: none;
+ 
+}
+
+.company-logos-left-click img{
+  width: 100%;
+  height: 100%;
+}
+
+.company-logos-right-click{
+  border-radius: 50%;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  width: 40px;
+  height: 40px;
+  display: none;
+ 
+}
+
+.company-logos-right-click img{
+  width: 100%;
+  height: 100%;
+}
+
+
 /* company-logos-section-wrapper responsive design start */
 
 @media screen and (max-width: 768px) {
@@ -792,7 +902,17 @@ body {
 
   .company-logos-section-wrapper {
     margin-top: 60px;
-    flex-direction: column;
+  }
+
+  .company-logos-responsive-none{
+    display: none;
+  }
+  .company-logos-left-click{
+    display: initial;
+  }
+
+  .company-logos-right-click{
+    display: initial;
   }
 }
 
@@ -856,7 +976,7 @@ body {
   height: 200px;
   border-radius: 50%;
   border: 15px solid #0d0d0d52;
-  background: linear-gradient(251.27deg, #c0b7e8 12.87%, #8176af 89.33%);
+  background: linear-gradient(251.27deg, #c0b7e8 0%, #8176af 0%);
   font-family: Montserrat;
   font-size: 4.2rem;
   font-weight: 700;
@@ -901,6 +1021,36 @@ body {
   bottom: -32%;
 }
 
+.hydra-process-steps-left-click{
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  width: 40px;
+  height: 40px;
+  display: none;
+  border-radius: 50%;
+   
+}
+
+
+.hydra-process-steps-left-click img{
+  width: 100%;
+  height: 100%;
+   
+}
+
+.hydra-process-steps-right-click{
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: none;
+   
+}
+
+.hydra-process-steps-right-click img{
+  width: 100%;
+  height: 100%;
+}
+
 /* hydra-process-steps section responsive design start */
 
 @media screen and (max-width: 768px) {
@@ -941,6 +1091,18 @@ body {
   .hydra-process-steps-circle-card-item {
     position: static;
     width: 100%;
+  }
+
+  .hydra-process-steps-circle-responsive-none{
+    display: none;
+  }
+
+  .hydra-process-steps-left-click{
+    display: initial;
+  }
+
+  .hydra-process-steps-right-click{
+    display: initial;
   }
 }
 
@@ -1063,7 +1225,7 @@ body {
 
 .input-diff-height textarea::placeholder {
   position: absolute;
-  top: 10%;
+  top: 8%;
   left: 3%;
   font-size: 0.8rem;
   font-weight: 400;
@@ -1077,6 +1239,7 @@ body {
   width: 240px;
   height: 60px;
   border-radius: 100px;
+  border-style: none;
 }
 
 .hydra-subscription-form-button a {
@@ -1098,6 +1261,7 @@ body {
     padding: 15px 4%;
   }
 
+
   textarea {
     letter-spacing: 2px;
   }
@@ -1118,11 +1282,13 @@ body {
 
   .hydra-subscription-form input {
     width: 90%;
+    height: 50px;
     letter-spacing: 2px;
   }
 
   .input-diff-width textarea {
     width: 90%;
+    height: 50px;
   }
 
   .hydra-subscription-form-button {
