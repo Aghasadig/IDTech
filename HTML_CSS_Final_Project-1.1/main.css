@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  font-family: "Manrope", serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.container{
+    margin: 30px 5%;
+}
+
