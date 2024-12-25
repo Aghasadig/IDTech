@@ -97,33 +97,6 @@ body {
   display: none;
 }
 
-/* Header responsive design start */
-
-@media screen and (max-width: 768px) {
-  html,
-  body {
-    font-size: 12px;
-  }
-
-  .page-wrapper {
-    padding: 15px 2%;
-  }
-
-  .header-items-menu {
-    display: none;
-  }
-
-  .header-items-buttons {
-    display: none;
-  }
-
-  .hamburger-icon {
-    display: initial;
-  }
-}
-
-/* Header responsive design end */
-
 .advertising-section {
   width: 100%;
   margin-top: 5%;
@@ -240,98 +213,16 @@ body {
   left: 10%;
 }
 
-/* advertising-section responsive design start */
-
-@media screen and (max-width: 768px) {
-  html,
-  body {
-    font-size: 12px;
-  }
-
-  .page-wrapper {
-    padding: 15px 2%;
-  }
-
-  .advertising-section-vector-four {
-    display: none;
-  }
-
-  .advertising-section-vector-three {
-    display: none;
-  }
-
-  .advertising-section-vector-two {
-    display: none;
-  }
-
-  .advertising-section-vector-one {
-    display: none;
-  }
-
-  .advertising-section {
-    flex-direction: column-reverse;
-  }
-   
-  .advertising-section-info-main-text{
-    font-size: 2.5rem;
-  }
-
-  .advertising-section-banner{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .advertising-section-banner-img-wrapper img {
-    width: 300px;
-    height: 300px;
-  }
-
-  .advertising-section-banner-img-wrapper {
-    margin: 0 auto;
-    width: 340px;
-    height: 340px;
-  }
-
-  .advertising-section-info-button-wrapper div {
-    display: none;
-  }
-
-  .advertising-section-info {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .advertising-section-info p {
-    display: none;
-  }
-
-  .advertising-section-info-main-text {
-    text-align: center;
-    margin-block: 30px;
-  }
-
-  .advertising-section-info-button-wrapper {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .advertising-section-info-button {
-    width: 70%;
-  }
-}
-
-/* advertising-section responsive design end */
-
 .contact-us-section {
   margin-top: 10%;
   width: 100%;
   padding: 50px;
   box-shadow: 0px 4px 4px 0px #c0b7e803;
   background: radial-gradient(
-      50% 2900.76% at 50% 53.89%,
-      rgba(58, 52, 86, 0.95) 0%,
-      #211e2e 100%);
+    50% 2900.76% at 50% 53.89%,
+    rgba(58, 52, 86, 0.95) 0%,
+    #211e2e 100%
+  );
   border-radius: 90px;
   display: flex;
   justify-content: space-between;
@@ -364,64 +255,19 @@ body {
   border-style: none;
 }
 
-.contact-us-left-click-icon{
+.contact-us-left-click-icon {
   margin-left: 5px;
   display: flex;
   align-items: center;
   display: none;
 }
 
-.contact-us-right-click-icon{
+.contact-us-right-click-icon {
   display: flex;
   align-items: center;
   display: none;
   margin-right: 5px;
 }
-
-/* contact-us-section responsive design start */
-
-@media screen and (max-width: 768px) {
-  html,
-  body {
-    font-size: 10px;
-  }
-
-  .page-wrapper {
-    padding: 15px 2%;
-  }
-
-  .contact-us-responsive-none{
-    display: none;
-  }
-
-  .contact-us-section {
-    background: transparent;
-    padding: 10px;
-  }
-  .contact-us {
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    border: 1px solid #c0b7e854;
-    border-radius: 50px;
-    padding: 10px;
-    background: radial-gradient(
-      50% 2900.76% at 50% 53.89%,
-      rgba(58, 52, 86, 0.95) 0%,
-      #211e2e 100%
-    );
-  }
-
-  .contact-us-left-click-icon{
-    display: initial;
-  }
-
-  .contact-us-right-click-icon{
-    display: initial;
-  }
-}
-
-/* contact-us-section responsive design end */
 
 .introduction-section-wrapper {
   width: 100%;
@@ -451,7 +297,7 @@ body {
   color: white;
   font-weight: 400;
   line-height: 25px;
-  margin-left: 20%;
+  margin-left: 80px;
   margin-bottom: 35px;
 }
 
@@ -517,79 +363,6 @@ body {
   color: #343045;
 }
 
-/* introduction-section-wrapper responsive design start */
-
-@media screen and (max-width: 768px) {
-  html,
-  body {
-    font-size: 14px;
-  }
-
-  .page-wrapper {
-    padding: 15px 2%;
-  }
-
-  .introduction-section-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .introduction-section-header-right-arrow {
-    display: none;
-  }
-
-  .introduction-section-header-main-text {
-    width: 100%;
-    text-align: center;
-  }
-
-  .introduction-section-header-secondary-text {
-    display: none;
-  }
-
-  .introduction-section {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .introduction-section-banner {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .introduction-section-banner img {
-    width: 320px;
-    height: 320px;
-  }
-
-  .introduction-section-info {
-    align-items: center;
-    width: 90%;
-  }
-
-  .introduction-section-vectors {
-    display: none;
-  }
-
-  .introduction-section-info h2 {
-    display: none;
-  }
-
-  .introduction-section-info p {
-    margin-top: 30px;
-    text-align: center;
-  }
-
-  .introduction-section-info button {
-    width: 70%;
-    margin-top: 30px;
-  }
-}
-
-/* introduction-section-wrapper responsive design end */
-
 .hydra-benefits-section-wrapper {
   width: 100%;
   margin-top: 10%;
@@ -619,7 +392,7 @@ body {
   color: white;
   font-weight: 400;
   line-height: 25px;
-  margin-left: 20%;
+  margin-left: 80px;
 }
 
 .hydra-benefits-section-cards {
@@ -699,91 +472,37 @@ body {
   color: #343045;
 }
 
-.hydra-benefits-left-click{
+.hydra-benefits-left-click {
   position: absolute;
   left: -7%;
   top: 45%;
   border-radius: 50%;
-  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
   width: 40px;
   height: 40px;
   display: none;
 }
 
-.hydra-benefits-left-click img{
+.hydra-benefits-left-click img {
   width: 100%;
   height: 100%;
 }
 
-.hydra-benefits-right-click{
+.hydra-benefits-right-click {
   position: absolute;
   right: -6%;
   top: 45%;
   border-radius: 50%;
-  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
   width: 40px;
   height: 40px;
   display: none;
 }
 
-.hydra-benefits-right-click img{
+.hydra-benefits-right-click img {
   width: 100%;
   height: 100%;
 }
-
-/* hydra-benefits-section-wrapper responsive design start */
-@media screen and (max-width: 768px) {
-  html,
-  body {
-    font-size: 14px;
-  }
-
-  .page-wrapper {
-    padding: 15px 2%;
-  }
-
-  .hydra-benefits-section-header-main-text {
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-  }
-
-  .hydra-benefits-section-header-right-arrow {
-    display: none;
-  }
-
-  .hydra-benefits-section-header-secondary-text {
-    display: none;
-  }
-
-  .hydra-benefits-section-cards-vector {
-    display: none;
-  }
-
-  .hydra-benefits-section-cards {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    letter-spacing: 1px;
-  }
-
-  .hydra-benfits-section-card-item {
-    width: 80%;
-  }
-
-  .hydra-benfits-responsive-none{
-    display: none;
-  }
-
-  .hydra-benefits-left-click{
-    display: initial;
-  }
-  .hydra-benefits-right-click{
-    display: initial;
-  }
-}
-
-/* hydra-benefits-section-wrapper responsive design end */
 
 .hardware-and-tech-section-wrapper {
   margin-top: 10%;
@@ -830,38 +549,6 @@ body {
   object-fit: cover;
 }
 
-/* hardware-and-tech-section-wrapper responsive design start */
-@media screen and (max-width: 768px) {
-  html,
-  body {
-    font-size: 8px;
-  }
-
-  .page-wrapper {
-    padding: 15px 2%;
-  }
-
-  .hardware-and-tech-icon-wrapper {
-    display: none;
-  }
-
-  .hardware-and-tech-header h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 40px;
-  }
-  
-
-  .hardware-and-tech-section-wrapper {
-    margin-top: 60px;
-    height: 150px;
-  }
-  .hardware-and-tech-header h2 {
-    margin-top: 20px;
-  }
-}
-
-/* hardware-and-tech-section-wrapper responsive design end */
 .company-logos-section-wrapper {
   margin-top: 5%;
   width: 100%;
@@ -870,59 +557,31 @@ body {
   display: flex;
 }
 
-.company-logos-left-click{
+.company-logos-left-click {
   border-radius: 50%;
-  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
   width: 40px;
   height: 40px;
   display: none;
- 
 }
 
-.company-logos-left-click img{
+.company-logos-left-click img {
   width: 100%;
   height: 100%;
 }
 
-.company-logos-right-click{
+.company-logos-right-click {
   border-radius: 50%;
-  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
   width: 40px;
   height: 40px;
   display: none;
- 
 }
 
-.company-logos-right-click img{
+.company-logos-right-click img {
   width: 100%;
   height: 100%;
 }
-
-
-/* company-logos-section-wrapper responsive design start */
-
-@media screen and (max-width: 768px) {
-  .page-wrapper {
-    padding: 15px 2%;
-  }
-
-  .company-logos-section-wrapper {
-    margin-top: 60px;
-  }
-
-  .company-logos-responsive-none{
-    display: none;
-  }
-  .company-logos-left-click{
-    display: initial;
-  }
-
-  .company-logos-right-click{
-    display: initial;
-  }
-}
-
-/* company-logos-section-wrapper responsive design end */
 
 .hydra-process-steps {
   width: 100%;
@@ -951,11 +610,11 @@ body {
 }
 
 .hydra-process-steps-header-secondary-text {
-  width: 40%;
+  width: 50%;
   color: white;
   font-weight: 400;
   line-height: 25px;
-  margin-left: 20%;
+  margin-left: 70px;
 }
 
 .hydra-process-steps-circles-back-vector {
@@ -1027,93 +686,31 @@ body {
   bottom: -32%;
 }
 
-.hydra-process-steps-left-click{
-  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+.hydra-process-steps-left-click {
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
   width: 40px;
   height: 40px;
   display: none;
   border-radius: 50%;
-   
 }
 
-
-.hydra-process-steps-left-click img{
+.hydra-process-steps-left-click img {
   width: 100%;
   height: 100%;
-   
 }
 
-.hydra-process-steps-right-click{
-  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+.hydra-process-steps-right-click {
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
   width: 40px;
   height: 40px;
   border-radius: 50%;
   display: none;
-   
 }
 
-.hydra-process-steps-right-click img{
+.hydra-process-steps-right-click img {
   width: 100%;
   height: 100%;
 }
-
-/* hydra-process-steps section responsive design start */
-
-@media screen and (max-width: 768px) {
-  html,
-  body {
-    font-size: 12px;
-  }
-
-  .page-wrapper {
-    padding: 15px 2%;
-  }
-
-  .hydra-process-steps-header-right-arrow {
-    display: none;
-  }
-
-  .hydra-process-steps-header {
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-
-  .hydra-process-steps-header-secondary-text {
-    display: none;
-  }
-
-  .hydra-process-steps-circles-back-vector {
-    display: none;
-  }
-
-  .hydra-process-steps-circles {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .hydra-process-steps-circle-card-item {
-    position: static;
-    width: 100%;
-  }
-
-  .hydra-process-steps-circle-responsive-none{
-    display: none;
-  }
-
-  .hydra-process-steps-left-click{
-    display: initial;
-  }
-
-  .hydra-process-steps-right-click{
-    display: initial;
-  }
-
-}
-
-/* hydra-process-steps section responsive design end */
 
 .hydra-subscription {
   margin-top: 15%;
@@ -1257,60 +854,6 @@ body {
   color: #343045;
 }
 
-/* hydra-subscription section responsive design start */
-
-@media screen and (max-width: 768px) {
-  html,
-  body {
-    font-size: 13px;
-  }
-
-  .page-wrapper {
-    padding: 15px 4%;
-  }
-
-
-  textarea {
-    letter-spacing: 2px;
-  }
-
-  .hydra-subscription-header {
-    width: 100%;
-    text-align: center;
-  }
-
-  .hydra-subscription-header-line {
-    width: 70%;
-  }
-
-  .hydra-subscription-form {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hydra-subscription-form input {
-    width: 90%;
-    height: 50px;
-    letter-spacing: 2px;
-  }
-
-  .input-diff-width textarea {
-    width: 90%;
-    height: 50px;
-    padding: 5px 30px;
-  }
-
-  .hydra-subscription-form-button {
-    width: 90%;
-    letter-spacing: 2px;
-  }
-
-  .input-diff-height textarea {
-    width: 90%;
-  }
-}
-/* hydra-subscription section responsive design end */
-
 .footer-wrapper {
   margin-top: 7%;
   width: 100%;
@@ -1422,18 +965,362 @@ body {
   text-align: center;
 }
 
-/* footer-wrapper responsive design start */
+/* HYDRA LANDING PAGE RESPONSIVE DESIGN */
+
+/* Header responsive design start */
 
 @media screen and (max-width: 768px) {
   html,
   body {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .page-wrapper {
-    padding: 15px 4%;
+    padding: 15px 2%;
   }
 
+  .header-items-menu {
+    display: none;
+  }
+
+  .header-items-buttons {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: initial;
+  }
+  /* Header responsive design end */
+
+  /* advertising-section responsive design start */
+
+  .advertising-section-vector-four {
+    display: none;
+  }
+
+  .advertising-section-vector-three {
+    display: none;
+  }
+
+  .advertising-section-vector-two {
+    display: none;
+  }
+
+  .advertising-section-vector-one {
+    display: none;
+  }
+
+  .advertising-section {
+    flex-direction: column-reverse;
+  }
+
+  .advertising-section-info-main-text {
+    font-size: 2.5rem;
+  }
+
+  .advertising-section-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .advertising-section-banner-img-wrapper img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .advertising-section-banner-img-wrapper {
+    margin: 0 auto;
+    width: 340px;
+    height: 340px;
+  }
+
+  .advertising-section-info-button-wrapper div {
+    display: none;
+  }
+
+  .advertising-section-info {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .advertising-section-info p {
+    display: none;
+  }
+
+  .advertising-section-info-main-text {
+    text-align: center;
+    margin-block: 30px;
+  }
+
+  .advertising-section-info-button-wrapper {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .advertising-section-info-button {
+    width: 70%;
+  }
+  /* advertising-section responsive design end */
+
+  /* contact-us-section responsive design start */
+
+  .contact-us-responsive-none {
+    display: none;
+  }
+
+  .contact-us-section {
+    background: transparent;
+    padding: 10px;
+  }
+  .contact-us {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid #c0b7e854;
+    border-radius: 50px;
+    padding: 10px;
+    background: radial-gradient(
+      50% 2900.76% at 50% 53.89%,
+      rgba(58, 52, 86, 0.95) 0%,
+      #211e2e 100%
+    );
+  }
+
+  .contact-us-left-click-icon {
+    display: initial;
+  }
+
+  .contact-us-right-click-icon {
+    display: initial;
+  }
+  /* contact-us-section responsive design end */
+
+  /* introduction-section-wrapper responsive design start */
+  .introduction-section-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .introduction-section-header-right-arrow {
+    display: none;
+  }
+
+  .introduction-section-header-main-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .introduction-section-header-secondary-text {
+    display: none;
+  }
+
+  .introduction-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .introduction-section-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .introduction-section-banner img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .introduction-section-info {
+    align-items: center;
+    width: 90%;
+  }
+
+  .introduction-section-vectors {
+    display: none;
+  }
+
+  .introduction-section-info h2 {
+    display: none;
+  }
+
+  .introduction-section-info p {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .introduction-section-info button {
+    width: 70%;
+    margin-top: 30px;
+  }
+  /* introduction-section-wrapper responsive design end */
+
+  /* hydra-benefits-section-wrapper responsive design start */
+  .hydra-benefits-section-header-main-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .hydra-benefits-section-header-right-arrow {
+    display: none;
+  }
+
+  .hydra-benefits-section-header-secondary-text {
+    display: none;
+  }
+
+  .hydra-benefits-section-cards-vector {
+    display: none;
+  }
+
+  .hydra-benefits-section-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    letter-spacing: 1px;
+  }
+
+  .hydra-benfits-section-card-item {
+    width: 80%;
+  }
+
+  .hydra-benfits-responsive-none {
+    display: none;
+  }
+
+  .hydra-benefits-left-click {
+    display: initial;
+  }
+  .hydra-benefits-right-click {
+    display: initial;
+  }
+  /* hydra-benefits-section-wrapper responsive design end */
+
+  /* hardware-and-tech-section-wrapper responsive design start */
+  .hardware-and-tech-icon-wrapper {
+    display: none;
+  }
+
+  .hardware-and-tech-header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 40px;
+  }
+
+  .hardware-and-tech-section-wrapper {
+    margin-top: 60px;
+    height: 150px;
+  }
+  .hardware-and-tech-header h2 {
+    margin-top: 20px;
+  }
+  /* hardware-and-tech-section-wrapper responsive design end */
+
+  /* company-logos-section-wrapper responsive design start */
+  .company-logos-section-wrapper {
+    margin-top: 60px;
+  }
+
+  .company-logos-responsive-none {
+    display: none;
+  }
+  .company-logos-left-click {
+    display: initial;
+  }
+
+  .company-logos-right-click {
+    display: initial;
+  }
+  /* company-logos-section-wrapper responsive design end */
+
+  /* hydra-process-steps section responsive design start */
+  .hydra-process-steps-header-right-arrow {
+    display: none;
+  }
+
+  .hydra-process-steps-header {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .hydra-process-steps-header-secondary-text {
+    display: none;
+  }
+
+  .hydra-process-steps-circles-back-vector {
+    display: none;
+  }
+
+  .hydra-process-steps-circles {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hydra-process-steps-circle-card-item {
+    position: static;
+    width: 100%;
+  }
+
+  .hydra-process-steps-circle-responsive-none {
+    display: none;
+  }
+
+  .hydra-process-steps-left-click {
+    display: initial;
+  }
+
+  .hydra-process-steps-right-click {
+    display: initial;
+  }
+  /* hydra-process-steps section responsive design end */
+
+  /* hydra-subscription section responsive design start */
+  textarea {
+    letter-spacing: 2px;
+  }
+
+  .hydra-subscription-header {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hydra-subscription-header-line {
+    width: 70%;
+  }
+
+  .hydra-subscription-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hydra-subscription-form input {
+    width: 90%;
+    height: 50px;
+    letter-spacing: 2px;
+  }
+
+  .input-diff-width textarea {
+    width: 90%;
+    height: 50px;
+    padding: 5px 30px;
+  }
+
+  .hydra-subscription-form-button {
+    width: 90%;
+    letter-spacing: 2px;
+  }
+
+  .input-diff-height textarea {
+    width: 90%;
+  }
+  /* hydra-subscription section responsive design end */
+
+  /* footer-wrapper responsive design start */
   .footer-wrapper {
     flex-direction: column;
     align-items: center;
@@ -1460,6 +1347,5 @@ body {
     width: 100%;
     align-items: center;
   }
+  /* footer-wrapper responsive design end */
 }
-
-/* footer-wrapper responsive design end */
