@@ -17,6 +17,571 @@ li {
 }
 
 .container{
-    margin: 30px 5%;
+    margin: 30px 8%;
 }
+
+.header-items-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-items-wrapper nav{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+
+}
+
+.header-items-menu-items{
+  display: flex;
+  gap: 40px;
+}
+
+.menu-item a{
+  color: #1C4A2A;
+font-size: 1.1rem;
+font-weight: 500;
+line-height: 21.6px;
+letter-spacing: -0.01em;
+}
+
+.menu-item :hover{
+  color: #8C8C8C;
+  padding: 15px;
+  border: 1px solid #1C4A2A;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.header-items-buttons-wrapper{
+  max-width: 250px;
+  display: flex;
+  gap: 16px;
+}
+
+.header-items-buttons-login{
+  padding: 15px 40px;
+  border: 1px solid #E0E8E0;
+  background: transparent;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.header-items-buttons-login a{
+color: #0E2515;
+font-weight: 500;
+line-height: 19.2px;
+letter-spacing: -0.01em;
+}
+
+.header-items-buttons-register{
+  padding: 15px 50px;
+  border-radius: 8px;
+  background: #1C4A2A;
+  border-style: none;
+  cursor: pointer;
+
+
+
+}
+
+.header-items-buttons-register a{
+  color: white;
+  font-size: 1rem;
+font-weight: 500;
+line-height: 19.2px;
+letter-spacing: -0.01em;
+}
+
+.responsive-design-menu-icons-wrapper{
+  display: none;
+}
+
+.responsive-design-menu-icons-wrapper :nth-child(1){
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+
+.animal-chooser-section-wrapper{
+  width: 100%;
+  max-height: 911px;
+  position: relative;
+}
+
+.animal-chooser-section{
+  width: 100%;
+  max-height: 911px;
+  display: flex;
+}
+
+.animal-chooser-text-side{
+  width: 50%;
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background-color: #1C4A2A;
+}
+
+.animal-chooser-text-side-main-text{
+font-size: 3.8rem;
+font-weight: 500;
+line-height: 90px;
+letter-spacing: -0.01em;
+color: white;
+text-align: left;
+margin-top: 80px;
+}
+
+.animal-chooser-text-side-secondary-text{
+font-size: 1.2rem;
+font-weight: 500;
+line-height: 32.4px;
+letter-spacing: -0.01em;
+text-align: left;
+color: #FFFFFFB2;
+margin-right: 50px;
+}
+
+.animal-chooser-banner-side{
+  width: 50%;
+  height: 850px;
+}
+
+.animal-chooser-banner-side img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.animal-chooser-section-animal-options{
+  position: absolute;
+  width: 90%;
+  height: 260px;
+  background-color: white;
+  bottom: 5%;
+  left: 5%;
+  border-radius: 16px;
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.animal-options-header{
+width: 100%;
+font-size: 2rem;
+font-weight: 500;
+letter-spacing: -0.01em;
+text-align: left;
+color: #0E2515;
+margin-top: 20px;
+}
+
+.animal-options-select-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.animal-options-select-wrapper-location-top{
+font-size: 1rem;
+font-weight: 500;
+line-height: 19.2px;
+letter-spacing: -0.01em;
+text-align: left;
+color: #8C8C8C;
+margin-bottom: 20px;
+}
+
+.animal-options-select-wrapper-location-bottom{
+  display: flex;
+  gap: 10px;
+  background-color: #F5F5F5;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+} 
+
+.location-select{
+  border-style: none;
+  outline: none;
+  background: transparent;
+  width: 220px;
+}
+
+.pet-select{
+  border-style: none;
+  outline: none;
+  background: transparent;
+  width: 150px;
+}
+
+.breed-select{
+  border-style: none;
+  outline: none;
+  background: transparent;
+  width: 150px;
+}
+
+.gender-select{
+  border-style: none;
+  outline: none;
+  background: transparent;
+  width: 150px;
+}
+
+.age-select{
+  border-style: none;
+  outline: none;
+  background: transparent;
+  width: 220px;
+}
+
+.animal-chooser-section-btn{
+  padding: 17px 60px;
+  border-radius: 10px;
+  background-color: #1C4A2A;
+  border-style: none;
+  outline: none;
+  margin-top: 20px;
+}
+
+.animal-chooser-section-btn a{
+  color: white;
+font-size: 1rem;
+font-weight: 500;
+line-height: 19.2px;
+letter-spacing: -0.01em;
+}
+
+.find-furry-friend{
+  width: 100%;
+  display: flex;
+  margin-top: 5%;
+}
+
+.find-furry-friend-images-side{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.find-furry-friend-images{
+  width: 40%;
+}
+
+.find-furry-friend-images img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.find-furry-friend-text-side{
+  width: 50%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 48px;
+}
+
+.find-furry-friend-main-text{
+  font-size: 3.8rem;
+  font-weight: 500;
+  line-height: 90px;
+  letter-spacing: -0.01em;
+  text-align: left;
+color: #0E2515;  
+}
+
+.find-furry-friends-secondary-text{
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 32.4px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #8C8C8C;  
+}
+
+.find-furry-friend-button-wrapper{
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  cursor: pointer;
+  padding: 20px 48px;
+  border-radius: 10px;
+  border: 1px solid #E0E8E0;
+}
+
+.find-furry-friend-button{
+  border-style: none;
+  outline: none;
+  background: transparent;
+}
+
+.find-furry-friend-button a{
+font-size: 1.2rem;
+font-weight: 500;
+line-height: 21.6px;
+letter-spacing: -0.01em;
+text-align: left;
+color: #0E2515;
+} 
+
+.adoption-guide-section{
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+}
+
+.adoption-guide-text-side{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.adoption-guide-main-text{
+  font-size: 3.8rem;
+  font-weight: 500;
+  line-height: 90px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #0E2515;
+}
+
+.adoption-guide-secondary-text{
+font-size: 1.1rem;
+font-weight: 500;
+line-height: 32.4px;
+letter-spacing: -0.01em;
+text-align: left;
+color: #8C8C8C;
+}
+
+
+.adoption-guide-cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.adoption-guide-card-item{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 20px;
+  border: 1px solid #E0E8E0;
+  border-radius: 12px;
+  background-color: #F8FCF9;
+}
+.adoption-guide-banner-side img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PETOPIA LANDING PAGE RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+  html,
+  body{
+    font-size: 10px;
+  }
+  .container{
+    margin: 10px 3%;
+  }
+
+/* Responsive Header */
+
+
+.header-items-menu{
+  display: none;
+}
+
+.header-items-buttons-wrapper{
+  display: none;
+}
+.responsive-design-menu-icons-wrapper{
+  display: initial;
+}
+
+/* Responsive end */
+
+
+/* Responsive animal-chooser-section-wrapper start */
+
+.animal-chooser-section-animal-options{
+  display: none;
+}
+
+.animal-chooser-section{
+  flex-direction: column;
+}
+
+.animal-chooser-text-side{
+  width: 100% ;
+  height: 350px;
+}
+
+.animal-chooser-banner-side{
+  width: 100%;
+  height: 375px;
+}
+
+.animal-chooser-text-side-main-text{
+  font-size: 3.1rem;
+  line-height: 48px;
+  margin-top: 50px;
+  }
+  
+  .animal-chooser-text-side-secondary-text{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 25.2px;
+    text-align: left;
+    margin-left: 50px;
+    }
+
+    /* Responsive animal-chooser-section-wrapper end */
+
+    /* Responsive find-furry-friend start */
+       .find-furry-friend{
+        flex-direction: column;
+        margin-top: 70px;
+       }
+
+       .find-furry-friend-images-side{
+        width: 100%;
+        justify-content: center;
+       }
+
+       .find-furry-friend-images{
+        width: 45%;
+       }
+
+       .find-furry-friend-text-side{
+        margin-top: 30px;
+        width: 100%;
+        margin-left: 10px;
+        gap: 20px;
+       }
+
+       .find-furry-friend-main-text{
+         font-size: 3.1rem;
+         line-height: 48px;
+       }
+
+       .find-furry-friends-secondary-text{
+        padding-right: 60px;
+font-size: 1.5rem;
+line-height: 28.8px;
+       }
+
+       .find-furry-friend-button-wrapper{
+        width: 95%;
+       }
+
+
+
+
+
+
+
+
+        /* Responsive find-furry-friend end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+}
+
 
