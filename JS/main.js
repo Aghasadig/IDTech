@@ -1,4 +1,11 @@
-// 1
+// // 1
+
+// function getElementIndex(array, index) {
+//     const element = array.find((array, i) => i === index);
+//     return element; 
+//   }
+  
+//   console.log(getElementIndex([10, 20, 30, 40], 2)); 
 
 
 
