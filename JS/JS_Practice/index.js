@@ -111,18 +111,106 @@
 
 // .6.
 
-let students = [
-    { id: 1, name: "Aygun", grades: [85, 90, 92] },
-    { id: 2, name: "Elcin", grades: [75, 85, 88] },
-    { id: 3, name: "Nigar", grades: [95, 88, 91] },
-    { id: 4, name: "Orxan", grades: [70, 65, 72] },
-  ];
+// let students = [
+//     { id: 1, name: "Aygun", grades: [85, 90, 92] },
+//     { id: 2, name: "Elcin", grades: [75, 85, 88] },
+//     { id: 3, name: "Nigar", grades: [95, 88, 91] },
+//     { id: 4, name: "Orxan", grades: [70, 65, 72] },
+//   ];
 
   
-  
+// // 6 - answer
+
+
+// const studentAvarage = students.map((student) )
 
 
 
 
-// 6 - answer
+
+
+
+
+
+
+
+
+
+// 7 faktorial
+
+// function calculateFactorial (n) {
+//   let a = 1;
+
+//   for(let i = 1; i <= n; i++){
+//       a = a * i;
+//   }
+
+//   return a;
+// }
+
+// console.log(calculateFactorial(10));
+
+
+
+// 8 square
+
+// const square = n => n*n;
+
+// console.log(square(10));
+
+
+
+// .9.
+
+// function filterArray(arr, filterFuncsiya) {
+//   let currentArr = [];
+
+//   for(let i = 0; i < arr.length; i++) {
+//       const isTrue = filterFuncsiya(arr[i]);
+
+//       if(isTrue){
+//           currentArr.push(arr[i])
+//       }
+//   }
+
+//   return currentArr;
+// }
+
+// console.log({
+//   filterOwn: filterArray(numbers, function (item) {
+//       return item > 3;
+//   }),
+// })
+
+
+// // .10.
+
+// const bankAccount = {
+//   accountNumber: 121312,
+//   owner: "Sadiq",
+//   emeliyyatHistory: [],
+//   balance: 0,
+
+//   addMoney(money){
+//       bankAccount.emeliyyatHistory.push({ type: "add", amount: money})
+//       bankAccount.balance += money;
+//   },
+//   removeMoney(money){
+//       bankAccount.emeliyyatHistory.push({ type: "remove", amount: money})
+//       bankAccount.balance -= money;
+//   },
+//   showBalance(){
+//       return bankAccount.balance;
+//   },
+//   showHistory(){
+//       return bankAccount.emeliyyatHistory;
+//   }
+// }
+// bankAccount.addMoney(100);
+// bankAccount.removeMoney(20);
+
+// console.log({
+//   balance: bankAccount.showBalance(),
+//   history: bankAccount.showHistory(),
+// })
 
