@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.main-container{
+    position: relative;
+}
+
+.mobile-nav{
+    position: absolute;
+    width: 50%;
+    height: 50vh;
+    background-color: navajowhite;
+    left: -2000px;
+    top: 50px;
+
+}
+
+.active{
+    left: 0px;
+}
