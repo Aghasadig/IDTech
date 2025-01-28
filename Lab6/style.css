@@ -4,20 +4,163 @@
     box-sizing: border-box;
 } 
 
-.main-container{
-    position: relative;
+a{
+    text-decoration: none;
 }
+
+li{
+    list-style: none;
+}
+
+
+@media screen and (max-width:768px) {
+    
+.main-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(/images/man_in_snow.jpg);
+    background-size: cover;
+   
+}
+
+.menu-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-wrapper{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.logo-text{
+    font-family: "Geist Mono", serif;
+}
+
+.button-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-text-content{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-family: "Poppins", serif;
+}
+
+.main-text-content h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.main-text-content p{
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.main-text-content-button{
+    width: 45%;
+    height: 8vh;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.main-text-content-button a{
+    color: black ;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .mobile-nav{
     position: absolute;
-    width: 50%;
-    height: 50vh;
-    background-color: navajowhite;
+    width: 75%;
+    height: 100vh;
+    background-color: white;
     left: -2000px;
-    top: 50px;
+    top: 0px;
 
 }
 
+.mobile-nav-header{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.mobile-nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.mobile-nav-logo-text{
+    font-family: "Geist Mono", serif;
+}
+
+.mobile-nav-search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 80%;
+    height: 6vh;
+    margin: 15px auto;
+}
+
+.search-line{
+    outline: none;
+    border-style: none;
+}
+
+hr{
+    width: 90%;
+}
+
+.mobile-nav-menu{
+    margin-left: 30px;
+     margin-top: 30px;
+}
+
+.mobile-nav-menu-items{
+    margin-block: 10px;
+}
+
+.mobile-nav-menu-items a{
+    font-family: "Poppins", serif;
+    color: black;
+    font-weight: 500;
+}
+
+
 .active{
     left: 0px;
+}
+
 }
