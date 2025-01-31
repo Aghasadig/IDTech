@@ -126,8 +126,5 @@
 // console.log(sadeEded(3));
 
 
-container = document.getElementById(container);
-
-container.querySelector(".title").textContent="yeni title";
 
   
