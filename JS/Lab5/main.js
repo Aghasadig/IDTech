@@ -23,11 +23,4 @@ const headers = document.querySelectorAll('.accordion-item-header');
 
 
 
-
-
-
-
-
-
-
  

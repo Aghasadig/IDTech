@@ -64,3 +64,70 @@
 //   }
   
 //   console.log(calculateAverage([10, 100, 45])); 
+
+
+// sertli operatorlar
+// tek/cut func
+
+// function myFunc(x){
+//     if(x%2==0){
+//         console.log("bu eded cutdur");
+//     } else{
+//         console.log("bu eded tekdir");
+//     }
+// }
+
+// console.log(myFunc(5));
+
+// en boyuyu tapan func
+// function myFunc(x,y,z){
+//     if(x>=y && x>=z){
+//         console.log(x ,"bu eded en boyukdur");
+//     } else if(y>=x && y>=z){
+//         console.log(y , "bu eded en boyukdur");
+//     } else{
+//         console.log(z ," bu eded en boyukdur");
+//     }
+// }
+
+// console.log(myFunc(5,7,9));
+
+
+// fesil tapan func
+
+// function myFunc(x){
+//     if(x==12 || x==1 || x==2){
+//         console.log("hal hazirda qi$dasiz");
+//     } else if(x==3 || x==4 || x==5){
+//         console.log("hal hazirda yazdasiz");
+//     } else if(x==6 || x==7 || x==8){
+//         console.log("hal hazirda yaydasiz");
+//     } else{
+//         console.log("hal hazirda payizdasiz");
+//     }
+// }
+
+// console.log(myFunc(8));
+
+
+// sade eded func
+
+
+// const sadeEded=(eded) =>{
+//     if(eded<2) return false;
+
+//     for( let i=2; i<eded; i++){
+//         if(eded%i===0) return false;
+//     }
+
+//     return true;
+// }
+
+// console.log(sadeEded(3));
+
+
+container = document.getElementById(container);
+
+container.querySelector(".title").textContent="yeni title";
+
+  
