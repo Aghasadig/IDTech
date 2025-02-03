@@ -127,4 +127,39 @@
 
 
 
-  
+//   getElementById ilə elementi tapın və mətnini dəyişin
+
+//    const newTitle = document.getElementById('title').innerText="New Title";
+
+
+   
+
+// querySelector ilə elementi tapın və class əlavə edin =>
+
+// const addNewClass = document.querySelector('p').classList.add('new-class');
+
+
+//  Yeni element yaradın və DOM-a əlavə edin
+
+// const p = document.getElementById('title');
+
+// const newElement = document.createElement('p');
+// newElement.textContent = "This is a new paragraph"
+
+// p.appendChild(newElement);
+
+
+//  Elementi silin  =>
+
+    // const elementRemove = document.getElementById('title');
+
+    // elementRemove.remove()
+
+
+
+
+    // 5. Element attributlarını dəyişin =>
+
+        // const newAtributeSet = document.getElementById('title');
+        
+        // newAtributeSet.setAttribute('title','new-title');
