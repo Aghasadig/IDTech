@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Giga", serif;
+}
+
+.page-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-side{
+    width: 60%;
+  
+}
+.logo{
+    color: gold;
+    font-size: 40px;
+    padding: 30px;
+}
+
+.products-side-cards-container{
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid black;
+}
+
+.products-card{
+    width: 26%;
+    height: 360px;
+    border: 2px solid gold;
+    margin-block: 10px;
+    border-radius: 5px;
+}
+
+.products-image{
+    width: 100%;
+}
+
+.products-image img{
+    width: 100%;
+    height: 200px;
+}
+
+.products-title{
+    margin-block: 15px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.products-title span{
+    font-size: 15px;
+}
+
+.products-card-btn{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid gold;
+    margin-left: 27px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.products-card-btn:hover{
+    background-color: gold;
+    cursor: pointer;
+}
+
+
+
+.wishlist-side{
+    width: 40%;
+    margin-top: 70px;
+}
+
+.wishlist-header{
+    padding: 35px;
+    color: gold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 5px solid gold;
+    margin-top: 40px;
+}
+
+.wishlist-added-cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    padding: 30px;
+    margin-top: 1px;
+}
