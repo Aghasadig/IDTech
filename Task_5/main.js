@@ -1,13 +1,22 @@
 const form = document.querySelector(".employe-add-form");
-const table = document.querySelector(".employe-table")
+const table = document.querySelector(".employe-table");
+
+const fullName = document.querySelector("#fullName");
+const age = document.querySelector("#age");
+const position = document.querySelector("#position");
+const experience = document.querySelector("#experience");
+const skills = document.querySelector("#skills");
+const startDate = document.querySelector("#startDate");
+
+let editModeId;
 
 let employes = [];
 
-const uid = function(){
+const uid = function () {
   return Date.now().toString(36) + Math.random().toString(36).substring(2);
-}
+};
 
-function Employee( fullName, age, position, experience, skills, startDate){
+function Employee(fullName, age, position, experience, skills, startDate) {
   this.id = uid();
   this.fullName = fullName;
   this.age = age;
@@ -17,8 +26,10 @@ function Employee( fullName, age, position, experience, skills, startDate){
   this.startDate = startDate;
 }
 
-form.addEventListener("submit" , (e) =>{
+form.addEventListener("submit", (e) => {
   e.preventDefault();
+  e.stopPropagation();
+
   const formData = new FormData(e.target);
 
   const fullName = formData.get("fullName");
@@ -28,23 +39,56 @@ form.addEventListener("submit" , (e) =>{
   const skills = formData.get("skills");
   const startDate = formData.get("startDate");
 
-  if(fullName.length < 4 || fullName.length > 50 || /[^a-zA-ZçğıöşüÇĞİÖŞÜ\s]+/.test(fullName)){
-    return alert("Ad və Soyadinızdakı simvolların sayı minimum 3 maksimum 50 simvoldan ibarət ola bilər!");
+  if (
+    fullName.length < 4 ||
+    fullName.length > 50 ||
+    /[^a-zA-ZçğıöşüÇĞİÖŞÜ\s]+/.test(fullName)
+  ) {
+    return alert(
+      "Ad və Soyadinızdakı simvolların sayı minimum 3 maksimum 50 simvoldan ibarət ola bilər!"
+    );
   }
 
-  if(age < 18 || age > 65){
+  if (age < 18 || age > 65) {
     return alert("Qeydiyyat ücün minimum 18 maksimum 65 yaşında olmalısınız!");
   }
 
-  if(age - 18 < experience){
+  if (age - 18 < experience) {
     return alert("Yaş və ya təcrübə doğru qeyd edilməyib!");
   }
 
   const employeeDate = new Date(startDate);
   const today = Date.now();
 
-  if(employeeDate >= today){
-    return alert("Tarix doğru deyil!")
+  if (employeeDate >= today) {
+    return alert("Tarix doğru deyil!");
+  }
+
+  if (editModeId) {
+    console.log(editModeId)
+    employes = employes.map((employe) => {
+      console.log(employe.id, editModeId)
+      if (employe.id === editModeId) {
+        return {
+          ...employe,
+          fullName,
+          age,
+          position,
+          experience,
+          skills,
+          startDate,
+        };
+      }
+      return employe;
+    });
+
+    console.log(employes)
+
+    form.reset()
+
+    editModeId = undefined;
+    showTable();
+    return;
   }
 
   const employeeData = new Employee(
@@ -54,19 +98,16 @@ form.addEventListener("submit" , (e) =>{
     experience,
     skills,
     startDate
-  )
+  );
 
   employes.push(employeeData);
 
   form.reset();
 
   showTable();
-
-})
-
+});
 
 function showTable() {
-  console.log(employes)
   table.innerHTML = `
 <thead id="table-header">
     <tr>
@@ -80,9 +121,8 @@ function showTable() {
 </thead>
 `;
 
-
-employes.forEach((employee, index) => {
-        table.innerHTML += `
+  employes.forEach((employee, index) => {
+    table.innerHTML += `
            <tr>
                 <td>${index + 1}</td>
                <td>${employee.fullName}</td>
@@ -90,26 +130,50 @@ employes.forEach((employee, index) => {
               <td>${employee.position}</td>
               <td>${employee.skills}</td>
               <td>
-                  <button class="operations-btn">Düzəliş</button>
-                   <button data-id="${employee.id}" class="remove-btn">Sil</button>  
+                  <button data-id="${
+                    employee.id
+                  }" class="operations-btn">Düzəliş</button>
+                   <button data-id="${
+                     employee.id
+                   }" class="remove-btn">Sil</button>  
                 </td>
              </tr>
-         `
-  });  
+         `;
+  });
 
- removeBtns();
+  removeBtns();
+  operationsBtns();
 }
 
-
-function removeBtns(){
+function removeBtns() {
   const removeBtn = document.querySelectorAll(".remove-btn");
   removeBtn.forEach((buttons) => {
-       buttons.addEventListener("click" , (e) => {
-          const id = e.target.dataset.id;
+    buttons.addEventListener("click", (e) => {
+      const id = e.target.dataset.id;
 
-          employes = employes.filter((employe) =>employe.id !== id);
-          showTable();
-       })
-  })
+      employes = employes.filter((employe) => employe.id !== id);
+      showTable();
+    });
+  });
 }
 
+function operationsBtns() {
+  const operationBtn = document.querySelectorAll(".operations-btn");
+
+  operationBtn.forEach((buttons) => {
+    buttons.addEventListener("click", (e) => {
+      const id = e.target.dataset.id;
+
+      const employeeData = employes.find((employe) => id === employe.id);
+
+      fullName.value = employeeData.fullName;
+      age.value = employeeData.age;
+      position.value = employeeData.position;
+      experience.value = employeeData.experience;
+      skills.value = employeeData.skills;
+      startDate.value = employeeData.startDate;
+
+      editModeId = id;
+    });
+  });
+}
