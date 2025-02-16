@@ -41,3 +41,63 @@
 //     }
    
 // })
+
+
+
+// task 6
+
+const btn = document.querySelector("#btn");
+
+btn.addEventListener("click" , () => {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+
+    if (name === "" || email === "") {
+        alert("Zəhmət olmasa, bütün sahələri doldurun!");
+        return false;
+    }
+    return true; 
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// task 7
+
+
+// document.addEventListener("keydown", (event) => {
+//     if (event.key === "Enter") {
+//         alert("Enter düyməsi basıldı!");
+//     } else if (event.key === "Escape") {
+//         console.log("Escape düyməsi basıldı. Konsolda görəcəksiniz.");
+//     } else if (event.key === "ArrowUp") {
+//         console.log("Yuxarı ox düyməsi basıldı.");
+//     } else if (event.key === "ArrowDown") {
+//         console.log("Aşağı ox düyməsi basıldı.");
+//     }
+// });
