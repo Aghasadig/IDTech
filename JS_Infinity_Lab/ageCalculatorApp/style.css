@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", serif;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #F0F0F0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-box{
+     width: 30%;
+     height: 50%;
+     background-color: white;
+     border-top-left-radius: 24px;
+     border-top-right-radius: 24px;
+     border-bottom-right-radius: 200px;
+     border-bottom-left-radius: 24px;
+     
+}
+
+.input-groups{
+    margin: 40px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-cover{
+    display: flex;
+    gap: 30px;
+}
+
+.btn-wrapper{
+    margin-top: 40px;
+    display: flex;
+    justify-content:baseline;
+}
+
+.btn-wrapper img{
+    width: 40px;
+    height: 40px;
+
+}
+hr{
+    width: 80%;
+}
+
+.line{
+    width: 80%;
+    height: 2px;
+    background-color: #F0F0F0 ;
+}
+
+#submit-btn{
+    border-style: none;
+}
+
+
+.input-public-style{
+     width: 100px;
+    height: 45px;
+    padding: 10px;
+font-weight: 700;
+font-size: 20px;
+line-height: 48px;
+letter-spacing: 1%;
+
+
+}
+
+.input-groups p{ 
+font-weight: 700;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: 25%;
+color: #716F6F;
+margin-block: 10px;
+
+}
+
+
+.calculate-screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calculate-screen p{
+    color: #151515;
+font-weight: 800;
+font-style: italic;
+font-size: 50px;
+letter-spacing: -3%;
+
+}
+
+.diff-color{
+    color: #854DFF;
+font-weight: 800;
+font-style: italic;
+font-size: 50px;
+
+
+}
