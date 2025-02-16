@@ -65,9 +65,9 @@ form.addEventListener("submit", (e) => {
   }
 
   if (editModeId) {
-    console.log(editModeId)
+    console.log(editModeId);
     employes = employes.map((employe) => {
-      console.log(employe.id, editModeId)
+      console.log(employe.id, editModeId);
       if (employe.id === editModeId) {
         return {
           ...employe,
@@ -82,9 +82,9 @@ form.addEventListener("submit", (e) => {
       return employe;
     });
 
-    console.log(employes)
+    console.log(employes);
 
-    form.reset()
+    form.reset();
 
     editModeId = undefined;
     showTable();
@@ -130,12 +130,10 @@ function showTable() {
               <td>${employee.position}</td>
               <td>${employee.skills}</td>
               <td>
-                  <button data-id="${
-                    employee.id
-                  }" class="operations-btn">Düzəliş</button>
-                   <button data-id="${
-                     employee.id
-                   }" class="remove-btn">Sil</button>  
+                  <button data-id="${employee.id
+      }" class="operations-btn">Düzəliş</button>
+                   <button data-id="${employee.id
+      }" class="remove-btn">Sil</button>  
                 </td>
              </tr>
          `;

@@ -1,181 +1,171 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-    font-family: "Poppins", serif;
+body {
+  font-family: "Poppins", serif;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.page-wrapper{
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
+.page-wrapper {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.page-header{
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    background-color: whitesmoke;
-    font-weight: 500; 
-    margin-bottom: 30px;  
+.page-header {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: whitesmoke;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 
-.input-container{
-    width: 40%;
-    border: 2px solid gray;
-    border-radius: 5px;
+.input-container {
+  width: 40%;
+  border: 2px solid gray;
+  border-radius: 5px;
 }
 
-.form-header{
-    font-weight: 500;
-    padding: 20px;
+.form-header {
+  font-weight: 500;
+  padding: 20px;
 }
 
-.employe-add-form{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+.employe-add-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
-.employe-add-form input{
-    width: 43%;
-    padding: 15px;
-    margin-bottom: 30px;
-    background-color: whitesmoke;
+.employe-add-form input {
+  width: 43%;
+  padding: 15px;
+  margin-bottom: 30px;
+  background-color: whitesmoke;
 }
 
-.form-add-btn{
-    padding: 15px 60px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border-style: none;
-    background-color: rgb(42, 42, 202);
+.form-add-btn {
+  padding: 15px 60px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: rgb(42, 42, 202);
 }
 
-.form-add-btn a{
-    color: white;
-    letter-spacing: 1px;
-    font-weight: 600;
+.form-add-btn a {
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
-.table-container{
-    border: 2px solid gray;
-    width: 55%;
-    border-radius: 5px;
+.table-container {
+  border: 2px solid gray;
+  width: 55%;
+  border-radius: 5px;
 }
 
-.employe-table{
-    width: 100%;
-    text-align: center;
-    border-collapse: collapse;
+.employe-table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
 }
 
-#table-header{
-    background-color: whitesmoke;
+#table-header {
+  background-color: whitesmoke;
 }
 
-tr{
-    height: 60px;
+tr {
+  height: 60px;
 }
 
-.employe-table button{
-    border-radius: 5px;
-    border-style: none;
+.employe-table button {
+  border-radius: 5px;
+  border-style: none;
 }
 
-.employe-table button a{
-    color: white;
-    letter-spacing: 1px;
+.employe-table button a {
+  color: white;
+  letter-spacing: 1px;
 }
-
 
 .remove-btn {
-    background-color: red;
-    padding: 10px 30px;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: 0.3s;
+  background-color: red;
+  padding: 10px 30px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 .remove-btn:hover {
-    background-color: darkred;
+  background-color: darkred;
 }
 
 .operations-btn {
-    background-color: rgb(43, 230, 43);
-    padding: 10px 15px;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: 0.3s;
+  background-color: rgb(43, 230, 43);
+  padding: 10px 15px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 .operations-btn:hover {
-    background-color: darkgreen;
+  background-color: darkgreen;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
 
+  .page-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
+  .page-header {
+    text-align: center;
+  }
 
+  .input-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
 
-@media screen and (max-width:768px) {
+  .form-header {
+    text-align: center;
+  }
 
-    body{
-        font-size: 10px;
-    }
-     
-    .page-wrapper{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
+  .employe-add-form {
+    flex-direction: column;
+  }
 
-    .page-header{
-        text-align: center;
-    } 
+  .employe-add-form input {
+    width: 80%;
+  }
 
-    .input-container{
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
+  .form-add-btn {
+    padding: 15px 70px;
+  }
 
-    .form-header{
-        text-align: center;
-    }
-
-    .employe-add-form{
-        flex-direction: column;
-    }
-
-    .employe-add-form input{
-        width: 80%;
-    }
-
-    .form-add-btn{
-        padding: 15px 70px;
-    }
-
-    .table-container{
-        width: 100%;
-        margin-top: 30px;
-        overflow: scroll;
-    }
-
-
-    
+  .table-container {
+    width: 100%;
+    margin-top: 30px;
+    overflow: scroll;
+  }
 }
