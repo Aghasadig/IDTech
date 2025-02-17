@@ -407,10 +407,12 @@ body {
 
   .download-buttons button:nth-child(3) {
     display: initial;
+    width: 34%;
   }
 
   .download-buttons button:nth-child(4) {
     display: initial;
+    width: 50%;
   }
 }
 

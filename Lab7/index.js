@@ -95,8 +95,11 @@ function productCheck(event) {
   showWishlist();
 }
 
+const favoritesCount = document.querySelector(".wishlist-header");
+
 function showWishlist(){
     wishlistContainerElement.innerHTML="";
+    favoritesCount.innerHTML =  `FAVORITES (${wishlist.length})`;
 
     wishlist.forEach((products) => {
         wishlistContainerElement.innerHTML += `
@@ -114,6 +117,56 @@ function showWishlist(){
           `;
       });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
