@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn-wrapper {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: 100vh;
+}
+
+.btn {
+  background-color: goldenrod;
+  padding: 20px 50px;
+  border-radius: 10px;
+  border-style: none;
+  outline: none;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.timer-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  font-size: 6rem;
+  color: yellow;
+  padding: 10px;
+  border: 1px solid goldenrod;
+  border-radius: 50%;
+}
