@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-wrapper p {
+  color: white;
+  font-size: 3rem;
+}
+
+.clock p {
+  color: white;
+  font-size: 6rem;
+  text-decoration: underline;
+}
