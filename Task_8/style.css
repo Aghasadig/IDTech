@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(24, 15, 15);
+}
+
+.content-box {
+  width: 17%;
+  height: 80vh;
+  background-color: black;
+  border: 20px solid white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.primary-styles {
+  width: 70%;
+  height: 23vh;
+  border-radius: 50%;
+  border: 2px solid white;
+}
