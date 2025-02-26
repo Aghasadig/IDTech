@@ -1,33 +1,34 @@
 const input = document.querySelector(".location");
-const key = "0026e0e835abcbdf25ead51fdb875765";
+const key = "896dd11f133491313ff2476e302b4db2";
 
-input.addEventListener("keypress", (e) => {
-    if (e.keyCode == "13") {
-        submit(input.value);
-    }
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    submit(input.value);
+  }
 });
 
 function submit(value) {
-    fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${key}&units=metric&lang=az`
-    )
-        .then((res) => res.json())
-        .then((data) => showData(data));
+  fetch(
+    `https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${key}&units=metric&lang=az`
+  )
+    .then((res) => res.json())
+    .then((data) => showData(data))
+    .catch(() => alert("Şəhər tapılmadı!"));
 }
 
 function showData(data) {
-    let cityName = document.querySelector(".weather_result_location");
-    cityName.innerText = `${data.name} ${data.country}`;
-
-    let cityTemp = document.querySelector(".weather_result_temperature");
-    cityTemp.innerText = `${data.main.temp}°C`;
-
-    let cityDesc = document.querySelector(".weather_result_description");
-    cityDesc.innerText = `${data.weather[0].description}`;
-
-    let weatherIcon = document.querySelector(".weather_icon");
-    weatherIcon.setAttribute(
-        "src",
-        `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
+  document.querySelector(
+    ".weather_location"
+  ).innerText = `${data.name}, ${data.sys.country}`;
+  document.querySelector(
+    ".weather_temperature"
+  ).innerText = `${data.main.temp}°C`;
+  document.querySelector(".weather_description").innerText =
+    data.weather[0].description;
+  document
+    .querySelector(".weather-icon")
+    .setAttribute(
+      "src",
+      `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
     );
 }

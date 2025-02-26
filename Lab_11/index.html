@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hava Proqnozu</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Hava Proqnozu</h1>
-        <input type="text" class="location" placeholder="Şəhəri daxil edin..." />
-        
-        <div class="weather_result">
-            <h2 class="weather_result_location">Şəhər adı</h2>
-            <p class="weather_result_temperature">--°C</p>
-            <p class="weather_result_description">Təsvir</p>
-            <img class="weather_icon" src="" alt="Hava şəraiti">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="content-box">
+        <h2>Hava Proqnozu</h2>
+        <div class="input-box">
+          <input type="text" class="location" placeholder="Şəhər daxil edin" />
         </div>
+        <div class="result">
+          <h3 class="weather_location"></h3>
+          <h2 class="weather_temperature"></h2>
+          <p class="weather_description"></p>
+          <img class="weather-icon" src="" alt="" />
+        </div>
+      </div>
     </div>
-
-    <script src="main.js"></script>
-</body>
+    <script src="/main.js"></script>
+  </body>
 </html>
