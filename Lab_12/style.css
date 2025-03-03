@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-wrapper{
+    width: 100%;
+    background-color: floralwhite;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", serif;
+}
+
+.content-box{
+    width: 80%;
+    border-radius: 20px;
+    background-color: white;
+    padding: 30px;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.page-header{
+    font-size: 2.5rem;
+}
+
+.input-groups {
+    display: flex;
+    gap: 10px;
+}
+
+#myInput{
+    width: 250px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#myCategories{
+    padding: 10px;
+    border-style: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.card-item {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    -webkit-box-shadow: 2px -2px 13px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px -2px 13px 2px rgba(0,0,0,0.75);
+box-shadow: 2px -2px 13px 2px rgba(0,0,0,0.75);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.title{
+    text-align: center;
+}
+
+.article{
+    font-weight: 400;
+}
+
+.date{
+    text-align: center;
+    color: red;
+}
