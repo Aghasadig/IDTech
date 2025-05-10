@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #009255;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bold {
+  width: 100%;
+  font-weight: 700; 
+  color: white; 
+
+}
+
+.quiz-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 100px;
+}
+
+.quiz-button {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  background-color: #fff;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.quiz-button:hover {
+  background-color: #e0e7ff;
+}
+
+
+
+
+
+.quiz-container {
+  background-color: #ebebeb;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.quiz-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quiz-header .icon {
+  color: #7c3aed;
+}
+
+.quiz-question {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.option {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s;
+  color:black ;
+}
+
+.start_text{
+  margin-left:  30px;
+}
+
+.option:hover {
+  border-color: #7c3aed;
+}
+
+.option.selected {
+  background-color: #ede9fe;
+  border-color: #7c3aed;
+}
+
+.submit-button {
+  margin-top: 2rem;
+  background-color: #7c3aed;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #6d28d9;
+}
+.title{
+  color: black;
+  font-weight: 450;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.result{
+  color: black;
+  font-size: 1.5rem ;
+  padding: 30px;
+}
+.result_text{
+  font-weight: 400;
+  margin-right: 40px;
+}
+.result_main_text{
+  text-align: center;
+  font-size: 6rem;
+  display: flex;
+
+}
+
+.score_text{
+  font-size: 3rem;
+}
