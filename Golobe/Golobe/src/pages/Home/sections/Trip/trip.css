@@ -1,0 +1,70 @@
+.trip {
+  margin-top: 100px;
+  margin-inline: 30px;
+  padding: 40px;
+}
+
+.tripHeader {
+    margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tripHeader h2 {
+  font-weight: 600;
+  font-size: 2.1rem;
+}
+
+.tripHeader p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.tripHeader button {
+  border: 1px #8dd3bb solid;
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+.tripCardsWrapper {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.tripCard {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 30%;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.tripCardTextContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tripCardTextContent h3 {
+  font-size: 1.1rem;
+  color: #112211;
+  opacity: 70%;
+  font-weight: 600;
+}
+
+.tripCardTextContent p {
+  font-size: 0.9rem;
+  color: #112211;
+  opacity: 90%;
+  font-weight: 500;
+}

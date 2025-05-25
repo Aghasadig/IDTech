@@ -1,0 +1,71 @@
+.reviews {
+  margin-top: 100px;
+  margin-inline: 30px;
+  padding: 40px;
+}
+
+.reviewsHeader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviewsHeader h2{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.reviewsHeader p{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.reviewsHeaderButton{
+    border: 1px #8DD3BB solid;
+    padding: 10px 15px;
+    font-weight: 500;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.reviewsCardsWrapper{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviewsCard{
+    border-radius: 20px;
+    width: 25%;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.reviewsCardHeader{
+    width: 100%;
+}
+
+.reviewsCardHeader h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.reviewsCardHeader p{
+    margin-top: 25px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #112211;
+}
+
+.reviewsCardButton{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
